@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/spnrbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txnm"
+        android:textSize="14dp"
+        android:layout_margin="3dp"
+        android:fontFamily="@font/custom_font"
+        android:textStyle="bold"
+        android:textColor="@color/theme_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+       android:id="@+id/ratingBar"
+        android:stepSize="1"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:isIndicator="true"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/custom_font"
+        android:layout_margin="3dp"
+        android:id="@+id/txreview"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/custom_font"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txdate"
+        android:textSize="14dp"
+        android:textAlignment="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="120dp"
+            android:text="Unpublish"
+            android:id="@+id/btunpublish"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/custom_font"
+            android:background="@drawable/bluebt" />
+
+        <Button
+            android:layout_width="100dp"
+            android:text="Delete"
+            android:id="@+id/btdelete"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/custom_font"
+            android:background="@drawable/redbt" />
+
+    </LinearLayout>
+</LinearLayout>

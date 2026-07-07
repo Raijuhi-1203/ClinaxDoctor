@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Basic Info"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Name *"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txnm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Clinic Name *"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txcname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Mobile No *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txmob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Experience (year) *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txexp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Address *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txadd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="State *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrstate"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="City *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrcity"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Qualification *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txqualification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Other Qualification *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txoqualification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Registration No *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txregno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Medical Council *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txcouncil"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Department *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrdept"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Sub-department *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnrsdept"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Description"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txdescp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Doctor's Fee *"
+                                android:fontFamily="@font/custom_font"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:textSize="14dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/txfee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <Button
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/btn_submit"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:text="Save Changes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/bluebt" />
+
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Speciality *"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvspeciality"
+                                android:layout_margin="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <Button
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/btn_submit2"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:text="Save Changes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/bluebt" />
+
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Symptoms *"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvsymptoms"
+                                android:layout_margin="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <Button
+                                android:textSize="16dp"
+                                android:fontFamily="@font/custom_font"
+                                android:id="@+id/btn_submit3"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:text="Save Changes"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/bluebt" />
+
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

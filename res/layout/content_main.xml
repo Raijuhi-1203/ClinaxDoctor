@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_marginBottom="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bt_addcart">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:padding="0dp"
+                        android:layout_alignParentTop="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/todayappo"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/alarm" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:textSize="13dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="center"
+                                    android:maxLines="1"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Today Appointment"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/myappo"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/bookmark" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="My Appointment"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:maxLines="1"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/custom_font" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/slotschedule"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/project" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:textSize="13dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="center"
+                                    android:maxLines="1"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Slot Schedule"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/updateslot"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/project" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Upload Schedule"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:maxLines="1"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/custom_font" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/todayschedule"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/schedule" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:textSize="13dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="center"
+                                    android:maxLines="1"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Today Schedule"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/docacc"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/docprofile" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="My Account"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:maxLines="1"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/custom_font" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/rating"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/rating" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:textSize="13dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="center"
+                                    android:maxLines="1"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Patient Review"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/report"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:padding="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/documents" />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:textSize="13dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="center"
+                                    android:maxLines="1"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Appointment Report"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:padding="0dp"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/banner" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bottombar"/>
+</RelativeLayout>

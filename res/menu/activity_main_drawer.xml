@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+  <group android:id="@+id/group1"
+      android:checkableBehavior="single" >
+
+    <item
+        android:id="@+id/nav_myappo"
+        android:icon="@drawable/appointment"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="My Appoinment" />
+
+    <item
+        android:id="@+id/nav_apoinment"
+        android:icon="@drawable/todayappo"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Today Appoinment" />
+
+    <item
+        android:id="@+id/nav_acc"
+        android:icon="@drawable/doctor"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="My Account" />
+  </group>
+
+  <group android:id="@+id/group2"
+      android:checkableBehavior="single" >
+
+    <item
+        android:id="@+id/nav_addschedule"
+        android:icon="@drawable/add_schedule"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Add Schedule" />
+
+    <item
+        android:id="@+id/nav_uschedule"
+        android:icon="@drawable/edit_schedule"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Update Schedule" />
+
+  </group>
+
+  <group android:id="@+id/group3"
+      android:checkableBehavior="single" >
+    <item
+        android:id="@+id/nav_review"
+        android:icon="@drawable/review"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Patient Review" />
+
+    <item
+        android:id="@+id/nav_cpass"
+        android:icon="@drawable/cpass"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Change Password" />
+
+  </group>
+
+  <group android:id="@+id/group4"
+      android:checkableBehavior="single" >
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/info_sign"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/contact_us"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Contact Us" />
+
+    <item
+        android:id="@+id/nav_condition"
+        android:icon="@drawable/menuterm"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Term and Condition" />
+
+    <item
+        android:id="@+id/nav_privacy"
+        android:icon="@drawable/menuprivacy"
+        app:actionViewClass="android.widget.ImageView"
+        android:title="Privacy Policy" />
+
+    <item
+        android:id="@+id/nav_developer"
+        app:actionViewClass="android.widget.ImageView"
+        android:icon="@drawable/coding"
+        android:title="Developer" />
+
+    <item
+        android:id="@+id/nav_logout"
+        app:actionViewClass="android.widget.ImageView"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+  </group>
+</menu>

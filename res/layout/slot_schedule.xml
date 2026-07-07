@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Activities.PagePrivacy"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="13dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="No of Days *"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textSize="13dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Consultation Mode *"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/spnrdays"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"/>
+
+                                <Spinner
+                                    android:id="@+id/spnrmode"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="13dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Weekly Off *"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textSize="13dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="No of Patient/15 min. *"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/spnroff"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"/>
+
+                                <EditText
+                                    android:id="@+id/txnopatient"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="14dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Time"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textSize="14dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="No of Patient"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textSize="14dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textAlignment="textStart"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Available ?"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview"
+                                android:layout_margin="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/theme_2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/theme_1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/btsubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/custom_font"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Save Changes"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
